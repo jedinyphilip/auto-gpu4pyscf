@@ -1,0 +1,30 @@
+GPUs            : compute capability 120
+CUDA_ARCH       : 120-real
+environment     : /home/user/auto-gpu4pyscf/env
+gpu4pyscf       : master -> 551d9bb165941a49c0b3d1281a3705680487b1b3
+toolkit         : from pip, into the environment
+installing a CUDA 13 toolkit from pip (no usable host nvcc)
+installing the CUDA 13 python stack
+nvcc            : 13.3  (/home/user/auto-gpu4pyscf/env/cuda)
+compiling for CUDA_ARCHITECTURES=120-real with -j7
+[  2%] Building C object gint/CMakeFiles/gint.dir/g2e.c.o
+[  2%] Building CUDA object gdft/CMakeFiles/gdft.dir/nr_eval_gto.cu.o
+[  2%] Building CUDA object gvhf-md/CMakeFiles/gvhf_md.dir/md_contract_j.cu.o
+[  2%] Building CUDA object gvhf-rys/CMakeFiles/gvhf_rys.dir/rys_jk_driver.cu.o
+[  4%] Building Fortran object solvent/CMakeFiles/solvent.dir/mnsol_interface.f90.o
+[  4%] Creating directories for 'cutlass'
+[  4%] Building CUDA object sem/CMakeFiles/sem.dir/ss_kernel.cu.o
+[  4%] Performing download step (git clone) for 'cutlass'
+Processing ./env/src
+Collecting gpu4pyscf-libxc-cuda13x==0.8.1 (from gpu4pyscf-cuda13x==1.8.1)
+built into /home/user/auto-gpu4pyscf/env (4.1G)
+running smoke test...
+GPU        : NVIDIA GeForce RTX 5070 Ti (sm_120, 17 GB)
+gpu4pyscf  : 1.8.1
+pyscf      : 2.14.0
+cupy       : 14.2.0
+contraction: cupy (cutensor missing!)
+compiled   : sm_120 -> native
+DF-B3LYP/def2-TZVPP water: E = -76.466681956 Ha  |grad|max = 3.07e-03  (8.0 s incl. warm-up)
+PASS
+use it with:  source /home/user/auto-gpu4pyscf/env/env.sh && python your_script.py

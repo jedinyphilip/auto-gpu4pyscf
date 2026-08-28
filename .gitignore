@@ -1,0 +1,19 @@
+# built artefacts, never committed
+env/
+last-build.log
+settings.json
+.build-profile.json
+
+# python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+build/
+dist/
+*.egg-info/
+.venv/
+
+# example output
+examples/*.log
+examples/*.chk
+examples/*.h5

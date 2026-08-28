@@ -1,0 +1,6 @@
+# The wrappers and the smoke test must stay LF: they run inside a Linux container
+# or under Git Bash, both of which choke on CRLF shebangs.
+*.sh text eol=lf
+*.py text eol=lf
+Dockerfile text eol=lf
+*.ps1 text eol=crlf
