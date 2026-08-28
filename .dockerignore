@@ -1,0 +1,4 @@
+# The build context is the repo root; the image only needs share/ and the
+# Dockerfile. env/ alone is several GB.
+*
+!share/

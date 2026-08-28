@@ -1,0 +1,152 @@
+GPUs            : compute capability 120
+CUDA_ARCH       : 120-real
+base image      : nvidia/cuda:12.8.2-devel-ubuntu24.04
+runtime image   : nvidia/cuda:12.8.2-runtime-ubuntu24.04
+gpu4pyscf       : master -> 1437ca7a9601ad0e13e7eac41c5860255d4ed263
+image target    : runtime
+disk free       : 123 GB, peak need ~35 GB
+build cache     : disposable builder 'gpu4pyscf-build', removed on success
+#1 DONE 1.2s
+#2 DONE 0.0s
+#4 DONE 1.2s
+#3 DONE 1.2s
+#5 DONE 0.0s
+#6 DONE 0.0s
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#7 sha256:2dbe244cc70649e8a1fdff85a025be571a25e35eda296d52993459e9a26f5d9d 1.52kB / 1.52kB 0.1s done
+#7 sha256:0e24b5d492c73f4a71d8e1876fd0aabdcc4d0693cc0ec011afdcbefbedd714b3 1.68kB / 1.68kB 0.1s done
+#7 sha256:f6b92178d30a63c758f5c7b77e8d4667817247d2e91d21cbbf814c81b2956c5d 60.01kB / 60.01kB 0.2s done
+#7 sha256:969ca232fd295e31deaebcfb985c35131f1f3084d6d81aaa3df0dee9ca2064a1 0B / 2.05GB 0.2s
+#7 sha256:c5108e094abf8f4c64de051ee9853a054b972f7fe9c71d5821a87cdd2eb74153 6.89kB / 6.89kB 0.2s done
+#7 sha256:c425312475aefdc5904e585d49d69ec2086364f8086fbd2528dbbb1eb6fa8948 0B / 186B 0.2s
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#7 DONE 377.7s
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#7 [runtime 1/9] FROM docker.io/nvidia/cuda:12.8.2-runtime-ubuntu24.04@sha256:7e62235c5d6f22a57ec8ba51f1583634fdbbf4b08a15b42dc1a60f086145c210
+#7 DONE 378.6s
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#9 [runtime 2/9] RUN apt-get update && apt-get install -y --no-install-recommends         python3 libgfortran5 libgomp1     && rm -rf /var/lib/apt/lists/*
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#9 [runtime 2/9] RUN apt-get update && apt-get install -y --no-install-recommends         python3 libgfortran5 libgomp1     && rm -rf /var/lib/apt/lists/*
+#9 DONE 14.2s
+#10 [runtime 3/9] RUN set -eu;     for so in libnvrtc.so libcublas.so libcusolver.so libcufft.so libcurand.so libcusparse.so; do         ldconfig -p | grep -q "${so}" || ls /usr/local/cuda/lib64/${so}* >/dev/null 2>&1             || { echo "runtime image is missing ${so}"; exit 1; };     done
+#10 DONE 0.1s
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#8 DONE 463.8s
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#8 DONE 464.0s
+#8 [builder  1/10] FROM docker.io/nvidia/cuda:12.8.2-devel-ubuntu24.04@sha256:7fc48a36965c6d0e5c9717dd899b2851cabb2dfef43d95dd12046a2d40bdc90f
+#8 DONE 469.8s
+#11 [builder  2/10] RUN apt-get update && apt-get install -y --no-install-recommends         git ca-certificates cmake make gfortran libopenblas-dev         python3 python3-dev python3-venv     && rm -rf /var/lib/apt/lists/*
+#11 DONE 23.7s
+#12 [builder  3/10] RUN python3 -m venv /opt/venv && pip install --no-cache-dir -U pip setuptools wheel
+#12 DONE 4.1s
+#13 [builder  4/10] RUN git clone --filter=blob:none https://github.com/pyscf/gpu4pyscf.git /opt/gpu4pyscf
+#13 DONE 3.6s
+#14 [builder  5/10] WORKDIR /opt/gpu4pyscf
+#14 DONE 0.0s
+#15 [builder  6/10] RUN git checkout --detach 1437ca7a9601ad0e13e7eac41c5860255d4ed263 && git log -1 --format='building %h %ad %s'
+#15 DONE 0.2s
+#16 [builder  7/10] RUN pip install --no-cache-dir -r requirements.txt
+#16 DONE 121.1s
+#17 [builder  8/10] RUN set -eux;     plat="$(python3 -c 'import sysconfig; print(sysconfig.get_platform())')";     mem_gb="$(awk '/MemTotal/ {print int($2/1024/1024)}' /proc/meminfo)";     jobs="$(python3 -c "import os,sys; print(max(1, min(os.cpu_count(), int(sys.argv[1])//4 or 1)))" "${mem_gb}")";     echo "compiling for CUDA_ARCHITECTURES=120-real with -j${jobs}";     cmake -S gpu4pyscf/lib -B "build/temp.${plat}/gpu4pyscf"         -DCUDA_ARCHITECTURES="120-real"         -DBUILD_LIBXC=OFF         -DCMAKE_BUILD_TYPE=Release         -DCMAKE_MESSAGE_LOG_LEVEL=WARNING;     cmake --build "build/temp.${plat}/gpu4pyscf" -j"${jobs}"
+#17 0.138 + echo compiling for CUDA_ARCHITECTURES=120-real with -j7
+#17 0.138 compiling for CUDA_ARCHITECTURES=120-real with -j7
+#17 DONE 155.9s
+#18 [builder  9/10] RUN CMAKE_CONFIGURE_ARGS="-DCUDA_ARCHITECTURES=120-real -DBUILD_LIBXC=OFF -DCMAKE_BUILD_TYPE=Release"         pip install --no-cache-dir --no-build-isolation .     && rm -rf /opt/gpu4pyscf/build
+#18 DONE 7.1s
+#19 [builder 10/10] RUN set -eux;     lib="$(find /opt/venv -name libgint.so | head -1)";     mkdir -p /opt/venv/share/gpu4pyscf;     cuobjdump --list-elf "${lib}" | grep -oE 'sm_[0-9]+' | sort -u         > /opt/venv/share/gpu4pyscf/archs.txt;     cat /opt/venv/share/gpu4pyscf/archs.txt
+#19 DONE 0.1s
+#20 [runtime 4/9] COPY --from=builder /opt/venv /opt/venv
+#20 DONE 11.2s
+#21 [runtime 5/9] COPY --from=builder /opt/gpu4pyscf/examples /opt/gpu4pyscf/examples
+#21 DONE 0.1s
+#22 [runtime 6/9] RUN python3 -V && python3 -c "import pyscf, numpy; print('venv ok, pyscf', pyscf.__version__)"
+#22 DONE 0.5s
+#23 [runtime 7/9] COPY smoke_test.py /opt/smoke_test.py
+#23 DONE 0.0s
+#24 [runtime 8/9] RUN printf '#!/bin/sh\nexec python3 /opt/smoke_test.py "$@"\n' > /usr/local/bin/smoke-test     && chmod +x /usr/local/bin/smoke-test
+#24 DONE 0.0s
+#25 [runtime 9/9] WORKDIR /work
+#25 DONE 0.0s
+#26 exporting to docker image format
+#27 importing to docker
+#27 DONE 42.1s
+#26 exporting to docker image format
+#26 DONE 79.6s
+built gpu4pyscf:local (5.0 GB)
+running smoke test...
+cleaning up     : removing builder 'gpu4pyscf-build', reclaiming 7.883GB
